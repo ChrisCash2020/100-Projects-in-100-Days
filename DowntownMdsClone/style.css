@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    height: 245px;
+    width: 100vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+.nav-top{
+    height: 47px;
+    text-align: center;
+    background-color: #A9C5C6;
+    font-size: 1.05em;
+    color: #FCF8F8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+header{
+    padding:20px 0 20px 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF3F7;
+}
+.logo img{
+   width: 385px; 
+   height: 100px;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav-bar li{
+    padding: 0 19.7px;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    color:#8F8F96;
+    font-size: .875em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+main{
+   justify-content: flex-end;
+    margin-bottom:50px;
+    display: flex;
+}
+.main-text{
+    width:57%;
+    border-bottom: 2px solid grey;
+}
+.main-text p{
+    margin:25px;
+    color: #666666;
+}
+.main-text p a{
+    color:#94b6b8;
+}
+
+#patient-portal{
+    width:26.6vw;
+}
+
+input{
+    padding:21px 34px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color:#8F8F96;
+    background-color: #94b6b8;
+    border:none;
+}
+section{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-image img{
+   height: 55vh;
+   width: 71.5vw;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 94vh;
+    width: 100vw;;
+}
+#contact-image{
+    display: flex;
+    flex-direction: row;
+    margin:15vh 15vw 20vh 15vw;
+}
+#contact-image-people{
+    text-align: center;
+    justify-content: center;
+}
+#contact-image-people img{
+    width: 200px;
+    height: 200px;
+    margin:15px;
+}
+footer{
+    border-top: 2px solid grey;
+    text-align: center;
+    padding-top:10px;
+    height: 70px;
+    font-size: .8em;
+}
