@@ -16,6 +16,7 @@ nav{
 }
 .nav-top{
     height: 47px;
+    width: 100%;
     text-align: center;
     background-color: #A9C5C6;
     font-size: 1.05em;
@@ -26,22 +27,23 @@ nav{
     font-weight: bold;
 }
 header{
-    padding:20px 0 20px 230px;
+    margin:.1vh 0 .1vh 13vw;;
     display: flex;
     flex-direction: column;
     background-color: #EDF3F7;
 }
 .logo img{
    width: 385px; 
-   height: 100px;
+   height: 11vh;
 }
 .nav-bar ul{
     display: flex;
     flex-direction: row;
     list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .nav-bar li{
-    padding: 0 19.7px;
     
 }
 .nav-bar a{
@@ -73,7 +75,7 @@ main{
 }
 
 input{
-    padding:21px 34px;
+    padding:1.5vh 1.5vw;
     font-weight: 900;
     text-transform: uppercase;
     color:#8F8F96;
@@ -107,11 +109,13 @@ article{
 #contact-image-people{
     text-align: center;
     justify-content: center;
+    padding: 5px;
 }
 #contact-image-people img{
-    width: 200px;
-    height: 200px;
-    margin:15px;
+    width: 12vw;
+    height: 22vh;
+    /* margin:1vh 1vw; */
+    align-self: stretch;
 }
 footer{
     border-top: 2px solid grey;
@@ -119,4 +123,24 @@ footer{
     padding-top:10px;
     height: 70px;
     font-size: .8em;
+}
+@media (max-width: 1060px) {
+    #contact-image {
+        margin:15vh 0vw;
+    }
+    #contact-image-people img{
+        min-width: 140px;
+    }
+}
+@media (max-width: 800px) {
+    #contact-image {
+        flex-direction: column;
+    }
+    #contact-image-people img{
+        min-height: 140px;
+    }
+
+    article{
+        height: auto;
+    }
 }
