@@ -36,7 +36,7 @@ p{
 .small-text{
     font-size:.75em;
 }
-.button, .btn{
+.button , .btn{
     border-color: transparent;
     border-radius: 10px;
     color: #212529;

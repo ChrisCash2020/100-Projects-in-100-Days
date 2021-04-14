@@ -1,0 +1,231 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.display-row{
+    display: flex;
+    flex-direction: row;
+}
+.display-column{
+    display: flex;
+    flex-direction: column;
+}
+.small-text{
+    text-transform: uppercase;
+    font-size: .75em;
+    padding:2vh 0;
+}
+#margin-bottom{
+    margin-bottom:6vh;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+h1{
+    font-size: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-links li a{
+   font-family: 'Ropa Sans', sans-serif; 
+}
+/* img{
+    height: 200px;
+    width: 200px;
+} */
+header{
+    height: 21vh;
+    width: 100vw;
+    align-items: center;
+   justify-content: flex-end;
+}
+.header-container{
+    justify-content: space-evenly;
+    width:100%;
+}
+.header-container img{
+    align-self: center;
+    height: 100%;
+}
+main{
+    width: 100vw;
+    margin: 3% 7%;
+    align-items: stretch;
+}
+iframe{
+    align-self: stretch;
+    width: auto;
+    height: auto;
+    min-height: 35vh;
+}
+.main-text{
+    width: 70%;
+    padding: 0 0 0 12%;
+}
+:is(h1,p){
+    color: #8690d3;
+}
+.donate-container{
+    width: 25%;
+    align-items: center;
+    margin:0 auto;
+}
+.btn{
+    padding:1vh 1vw;
+    border-radius: 20px;
+    border-color: transparent;
+    font-family: serif;
+    color: white;
+    font-size: 1.15em;
+    width: 35%;
+    background: #9bc1d4;
+    margin-bottom: 5.5vh;
+}
+#search{
+    width:60%;
+    /* padding: 12px; */
+    padding:1.5vh 1vw;
+
+}
+nav{
+    height: 30vh;
+    width: 100vw;
+    background: center/cover no-repeat url("./pexels-walid-ahmad-847402.jpg")
+}
+.nav-links{
+    align-items: center;
+    justify-content: center;
+    padding:1.3vh;
+}
+.nav-links li{
+    padding:20px;
+}
+.nav-links a{
+font-size: 1.3em;
+color: white;
+}
+footer{
+    width: 100vw;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+:is(footer) ul, p{
+    padding-bottom:2vh;
+    color: #605f53;
+}
+.footer-links{
+align-items: center;
+justify-content: center;
+}
+:is(.footer-links) li, a{
+    color: #605f53;
+    padding: 1vh .5vw;
+}
+header img{
+    height: 90%;
+    width: 40%;
+}
+.header-icons a{
+color:black;
+}
+i{
+    font-size: 2.5em;
+}
+#hide{
+    display: none;
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .btn, .nav-links a{
+        font-size:.9em;
+    }
+    .btn{
+        width: 50%;
+    }
+    .search{
+        width: 10%;
+    }
+    .nav-links{
+        flex-direction: column; 
+    }
+    .nav-links li{
+        padding:.7vh;
+    }
+    .small-text {
+        font-size: .6em;
+    }
+    .main-text{
+        padding:0 0 0 5%;
+        width: 60%;
+    }
+    i{
+        font-size: 1.5em;
+    }
+   
+     .header-container{
+height: 55%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    }
+    .header-container img{
+        min-width: 310px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    :is(body) header, nav, main, footer{
+        width: auto;
+        min-width: 459px;
+    }
+    main{
+        margin: 2vh 0;
+    }
+    .donate-container{
+        width: 100%;
+        margin:2vh 0;
+    }
+    .main-text{
+        padding:0;
+        margin:0 auto;
+        text-align: center;
+    }
+    
+    .hide {
+        display: none;
+        
+    }
+    #hide{
+        display: flex;
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-align: center;
+    }
+    footer p{
+        font-size: .7em;
+    }
+    .footer-links{
+    /* width:100%; */
+    }
+   :is(.footer-links) li, a{
+    color: #605f53;
+    padding: 1vh .2vw;
+    font-size: .8em;
+}
+}
