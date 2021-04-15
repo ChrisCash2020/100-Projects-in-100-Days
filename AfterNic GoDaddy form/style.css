@@ -169,7 +169,7 @@ width: 49%;
     }
    
 }
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
    html {
        align-items: stretch;
        min-width: 500px;
@@ -179,4 +179,14 @@ width: 49%;
        min-width: 500px;
    }
  
+} */
+html {
+align-items: stretch;
+width: clamp(500px, 100%, 100%);
+}
+main{
+width: clamp(500px, 84vw, 2100px);
+}
+header{
+width: clamp(500px, 100vw, 100vw);
 }

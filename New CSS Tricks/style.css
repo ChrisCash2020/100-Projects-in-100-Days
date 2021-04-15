@@ -1,0 +1,48 @@
+*{
+   
+}
+body{
+    background-color: rgb(19, 19, 19);
+    font-family: sans-serif;
+    
+}
+.basic-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    /* The repeat  statement should be used with the auto fit bc it automatically calculates the number of divs and the minmax sets a minimum width of the divs so they aren't to thin, the 1fr just means one part of the max available space */
+    grid-auto-rows: 240px; /* Make sure it is auto rows not template and also this just sets a minheight for the rows instead of trying to change the height manually  */
+    margin:.5rem; /* This is because I disabled the margins in the root and now I need to give it some spacing to look nice will prolly  not be neccessay in real projects */
+}
+ 
+
+@media (min-width: 600px) { /* If You want to make certain grids different sizes make sure to place them in a media querry so because they don't shift down automatically at smaller screen sizes and the whole grid looks bad*/
+.card-tall{
+    grid-row: span 2 / auto; /* this enables any div with the class to make the grid item take up two rows (does this vertically), the / auto enables that it automatically sets its ending point  */
+}
+.card-wide{
+    grid-column: span 2 / auto; /*  */
+}
+}
+
+
+.card{
+    background-color: white;
+    padding:0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat #353535;
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;  /* doesn't effect the grid at all from my first observation need more experience with it */
+    width: 100%;  /* doesn't effect the grid at all from my first observation need more experience with it */
+    border-radius: 4px; /* in order to give the grid items that circular shape*/
+    transition: all 500ms;  /* For If you want to add any animation effects or hover effects */
+    overflow: hidden;  /* just makes the shifting of the grids smoother */
+}
+.card:hover{
+    transform: translateY(-3px) scale(1.1);
+}
