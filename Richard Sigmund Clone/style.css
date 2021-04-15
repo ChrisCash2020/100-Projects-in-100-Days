@@ -3,18 +3,24 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+    align-items: stretch;
+    min-width: 417px;
+}
 body{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin:4vh 13.5vw;
+    margin:0 auto;
+    width: clamp(417px, 90vw, 1250px);
+    
 }
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 15vh;
+    height: 14vh;
     width: 100%;
 }
 #nav-logo h1{
@@ -34,58 +40,74 @@ nav{
     color: black;
     margin:25px;
 }
-.artwork{
-    height: 250vh;
-    width: 100%;
-}
 .head-artwork{
-    height: 110vh;
+    height: clamp(, 110vh, 845px);
     width: 100%;
     text-align: center;
+    margin-bottom:8vh;
 }
 .head-artwork img{
     height: 95%;
-    width: 100%;
+    width:clamp(417px, 90vw, 1200px);
+    margin: 0 auto;
 }
 .head-artwork p{
     text-align: left;
 }
 .gallery-artwork{
-    /* height: 85; */
-    width: 100%;
-    /* display: flex;
-    flex-direction: row; */
-      background: LightGray;
+    width: clamp(280px, 90vw, 1200px);
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    grid-template-areas:
-      "hd con ft"
-      "hd . sec";
-    margin-bottom: 10vh;
+  gap: 2.375em;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-auto-rows: 331px;  
+    margin: 0 auto;
 }
-.gallery-artwork a{
-    /* height: 95%; */
-    width: 100%;
+.gallery-artwork a { 
+    text-decoration: none;
+    color: black;
     text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+
 }
-.gallery-artwork a img{
-    height: 92%;
-    width: 77%;
+.gallery-artwork-grid-item img{
+    width: 100%;
+    height: 90%;
 }
-#hd{
-    grid-area: hd;
+footer{
+    text-align: left;
+    font-size: 1.875em;
+    height: 10vh;
+    width: 100%;
+    
 }
-#con{
-    grid-area: con;
+footer h1 {
+    margin-bottom: 25px;
 }
-#ft img{
-height: 60%;
+ footer p{
+     font-size: .5em;
+     margin-top: 25px;
+ }
+
+
+@media (max-width: 850px) {
+   nav{
+    flex-direction: column;
+    
 }
-#ft{
-    grid-area: ft;
+#nav-link li a  {
+    margin:5px;
 }
-#sec{
-    grid-area: sec;
 }
+
+.card-tall{
+    grid-row: span 3 / auto; 
+}
+.card-wide{
+    grid-column: span 2 / auto; /*  */
+}
+.card-tall-half{
+    grid-row: span 2 / auto;
+}
+
