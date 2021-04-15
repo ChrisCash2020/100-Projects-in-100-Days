@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: Helvetica, sans-serif;
+}
+.display-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.display-row2{
+    display: flex;
+    flex-direction: row;
+}
+.display-column2{
+  display: flex;
+    flex-direction: column;   
+    width: 100%;
+}
+.display-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    display:flex;
+    flex-direction: column;
+   
+    padding:1.5vh 1.5vw;
+
+}
+
+footer img{
+    height: 4.5vh;
+    width: 7.5vw;
+}
+.survey-box img{
+    height: 16vh;
+    width: 9vw;
+}
+header{
+    height: 35vh;
+    width: 100vw;
+    color:white;
+    background: #00a4a6;
+    margin-bottom: -7.5vh;
+}
+h1{
+    font-size: 3.25em;
+    padding:.5vh 0;
+}
+h2{
+    font-size: 1.5em;
+    padding:1vh 0;
+}
+h3{
+   padding:1vh 0; 
+}
+b{
+    font-size: 1.3em;
+}
+p{
+    font-size: 1.2em;
+     padding:1.5vh 0;
+}
+.small-text{
+    text-align: right;
+    font-size: .9em;
+    color: #09757a;
+}
+hr{
+    opacity: 0;
+}
+.bold{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+strong{
+    font-size: 1.75em;
+    color: #09757a;
+}
+strong:hover{
+    text-decoration: underline;
+}
+#text-half{
+width:100%;
+}
+input{
+    height: 5.2vh;
+}
+object {
+    width: 10vw;
+    color: white;
+    height: 5vh;
+}
+.btn{
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+#text-fill{
+width:100%;
+}
+main{
+    
+    width: 72%;
+    height: 84vh;
+     border: 1px solid transparent;
+     margin:0;
+
+    
+}
+.survey-box-container{
+justify-content: space-between;
+height: 100%;
+     border: 1px solid transparent;
+     border-radius: 10px;
+
+
+}
+.survey-box{
+height: 100%;
+border: 1px solid gray;
+border-radius: 10px;
+z-index: 999;
+background-color: white;
+padding:2vh 2vw;
+width: 49%;
+
+
+}
+@media (max-width: 974px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    strong{
+        font-size: 1em;
+    }
+    h3{
+        text-align: center;
+    }
+    b{
+        font-size: 1.1em;
+    }
+    .bold{
+        font-size: 1.1em;
+    }
+    p{
+        font-size: .9em;
+        padding:0;
+    }
+    input{
+        height: 3.5vh;
+    }
+    main{
+        width: 95vw;
+    }
+    .survey-box img{
+        width: 22vw;
+    }
+   
+}
+@media (max-width: 800px) {
+   html {
+       align-items: stretch;
+       min-width: 500px;
+      
+   }
+   main, header{
+       min-width: 500px;
+   }
+ 
+}
