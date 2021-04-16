@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    /* height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+     font-family: 'Mulish', sans-serif;
+     text-align: center;
+ 
+}
+.box-container{
+    /* display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0 auto; */
+  display: grid;
+    gap: 1rem;
+    max-width: 993px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+     grid-auto-rows: 393px;
+    /* width: (280px, 40vw, 996px); */
+}
+.box{
+    /* height: 393px;
+    width: 312px; */
+    /* width: clamp(280px, 100%, 312px);
+    height: clamp(393px, 100%, 393px); */
+    /* align-items: stretch; */
+    border: 2.5px solid whitesmoke;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-evenly;
+    margin:0 auto;
+    height: 100%;
+    width: 98%;
+    overflow: hidden;
+}
+.box-type2{
+    border-top-color: #50bc01;
+    box-shadow: 3px 3px 25px 2px #ccc
+}
+.title{
+font-weight: bold;
+}
+.price-per-month{
+    display: flex;
+    flex-direction: column;
+}
+.price-per-month h2 {
+    color: #5caefe;
+    font-size: 2em;
+}
+#small-text {
+    font-size: 12px;
+    color: grey;
+}
+.box p {
+font-size: 18px;
+}
+#box-btn{
+    width: 40%;
+    align-self: center;
+    padding: 10px;
+    background: #5caefe;
+    border: none;
+    color: white;
+}
