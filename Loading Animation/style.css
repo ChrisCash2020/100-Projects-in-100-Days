@@ -30,7 +30,7 @@ p {
     color: black;
     z-index: 9099;
     text-align: center;
-    width: 340px;
+    width: 320px;
  animation: colorchange 5s ease-in infinite forwards ;
  transform-origin: left;
 }
