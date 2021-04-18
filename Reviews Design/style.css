@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    background: center/cover no-repeat linear-gradient(to left, rgb(234,191,217),rgb(167,158,236) );
+    font-family: "Muli";
+    min-height: 100vh;
+}
+.container{
+    height: 320px;
+    width: 330px;
+    background-color: #ffffff;
+    box-shadow: 1px 5px 5px #646464;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    justify-content: space-evenly;
+    margin:0 auto;
+}
+h1{
+    text-align: left;
+    font-size: 1.245em;
+}
+p, i{
+    font-size: .75em;
+    color: #777777;
+}
+.rating-box{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    flex:2;
+    /* padding: 0 10px; */
+}
+.rating-item:hover{
+box-shadow: 1px 1px 5px #ccc;
+}
+.rating-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+padding: 0 10px;
+}
+.btn{
+    height: 25%;
+    border-radius: 25px;
+    background-color: #64646433;
+    flex: 2;
+    margin:0 5px;
+    width: 100%;
+}
+span{
+    background:linear-gradient(rgb(253,144,119),rgb(245,119,148));
+      box-shadow: 1px 1px 2px #ccc;
+    display: flex;
+    height: 100%;
+    border-radius: 35px;
+    
+}
+#b68{
+    width: 68%;
+    animation: progress 2.5s Linear 200ms 1  forwards;
+}
+#b13{
+    width: 13%;
+    animation: progress 2s Linear 200ms 1  forwards;
+}
+#b9{
+    width: 9%;
+    animation: progress 1s Linear 200ms 1  forwards;
+}
+#b3{
+    width: 3%;
+    animation: progress 1s Linear 200ms 1  forwards;
+    border-radius: 15px;
+}
+#b7{
+    width: 7%;
+    animation: progress 1s Linear 200ms 1  forwards;
+}
+@keyframes progress {
+from{
+    width: 0%;
+}
+to{
+    width:inherit::fit-content;
+}
+}
+@media (max-width: 320px) {
+    html {
+        padding: 10vh 0;
+        height: auto;
+        width: auto;
+        min-width: 300px;
+        align-items: stretch;
+       
+    }
+    .container{
+        width: 95%;
+       
+    }
+}
